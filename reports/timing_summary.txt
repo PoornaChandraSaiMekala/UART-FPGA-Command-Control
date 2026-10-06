@@ -1,0 +1,33 @@
+UART FPGA COMMAND AND CONTROL SYSTEM
+====================================
+
+Vivado Timing Summary
+---------------------
+
+Tool:
+Vivado 2026.1
+
+Target Clock:
+100 MHz
+
+Clock Period:
+10.000 ns
+
+Timing Results
+--------------
+
+Worst Negative Slack (WNS) : +5.643 ns
+Total Negative Slack (TNS) : 0 ns
+Failing Endpoints          : 0
+
+Worst Hold Slack (WHS)     : +0.152 ns
+Total Hold Slack           : 0 ns
+Hold Failing Endpoints     : 0
+
+Pulse Width Slack          : +4.500 ns
+
+Final Result:
+All user-specified timing constraints were met.
+
+Timing Status:
+TIMING CLOSED

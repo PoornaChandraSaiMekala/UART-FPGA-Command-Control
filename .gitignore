@@ -1,0 +1,40 @@
+# Vivado generated files
+.cache/
+.hw/
+.ip_user_files/
+.sim/
+.gen/
+.runs/
+.xpr
+.xcix
+.xsa
+
+# Vivado generated project files
+*.jou
+*.log
+*.str
+*.pb
+*.wdb
+*.wcfg
+*.dcp
+*.xpe
+*.xml
+
+# Generated output
+*.bit
+*.bin
+*.ltx
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# VS Code
+.vscode/

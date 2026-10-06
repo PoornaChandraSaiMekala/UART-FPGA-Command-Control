@@ -1,0 +1,30 @@
+UART FPGA COMMAND AND CONTROL SYSTEM
+====================================
+
+Vivado Synthesis Utilization Report
+-----------------------------------
+
+Tool:
+Vivado 2026.1
+
+Target Device:
+xc7a35tcpg236-1
+(Basys 3 / Artix-7)
+
+Design:
+uart_command_top
+
+Final Utilization
+-----------------
+
+Resource              Used       Available       Utilization
+-------------------------------------------------------------
+Slice LUTs             132        20,800           0.63%
+Slice Registers        119        41,600           0.29%
+Block RAM              0          50               0.00%
+DSP                    0          90               0.00%
+Bonded IOB             13         106              12.26%
+BUFG                   1          32               3.13%
+
+Key Result:
+The final design uses no Block RAM and no DSP resources.

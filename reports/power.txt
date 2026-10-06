@@ -1,0 +1,21 @@
+UART FPGA COMMAND AND CONTROL SYSTEM
+====================================
+
+Vivado Power Estimate
+---------------------
+
+Tool:
+Vivado 2026.1
+
+Design:
+uart_command_top
+
+Total On-Chip Power:
+0.074 W
+
+Equivalent:
+74 mW
+
+Important Note:
+This is a post-synthesis power estimate from Vivado.
+It is not a physical hardware power measurement.

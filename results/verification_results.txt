@@ -1,0 +1,150 @@
+UART FPGA COMMAND AND CONTROL SYSTEM
+====================================
+
+Functional Verification Summary
+--------------------------------
+
+Testbench:
+tb_uart_command_top.v
+
+========================================
+TEST 1: SET LED TO 55
+Command: 01 55
+Expected: A1 55
+RECEIVER: response byte 1 = a1
+RECEIVER: response byte 2 = 55
+Received response byte 1 = a1
+Received response byte 2 = 55
+PASS: Response = a1 55
+PASS: LED = 55
+
+========================================
+TEST 2: SET LED TO AA
+Command: 01 AA
+Expected: A1 AA
+========================================
+RECEIVER: response byte 1 = a1
+RECEIVER: response byte 2 = aa
+Received response byte 1 = a1
+Received response byte 2 = aa
+PASS: Response = a1 aa
+PASS: LED = aa
+
+========================================
+TEST 3: CLEAR LED
+Command: 02
+Expected: A2 00
+========================================
+RECEIVER: response byte 1 = a2
+RECEIVER: response byte 2 = 00
+Received response byte 1 = a2
+Received response byte 2 = 00
+PASS: Response = a2 00
+PASS: LED = 00
+
+========================================
+TEST 4: READ LED STATUS
+Command: 03
+Expected: A3 00
+========================================
+RECEIVER: response byte 1 = a3
+RECEIVER: response byte 2 = 00
+Received response byte 1 = a3
+Received response byte 2 = 00
+PASS: Response = a3 00
+
+========================================
+TEST 5: SET LED TO F0
+Command: 01 F0
+Expected: A1 F0
+========================================
+RECEIVER: response byte 1 = a1
+RECEIVER: response byte 2 = f0
+Received response byte 1 = a1
+Received response byte 2 = f0
+PASS: Response = a1 f0
+PASS: LED = f0
+
+========================================
+TEST 6: READ LED STATUS
+Command: 03
+Expected: A3 F0
+========================================
+RECEIVER: response byte 1 = a3
+RECEIVER: response byte 2 = f0
+Received response byte 1 = a3
+Received response byte 2 = f0
+PASS: Response = a3 f0
+
+========================================
+TEST 7: PWM = 0%
+Command: 04 00
+Expected: A4 00
+========================================
+RECEIVER: response byte 1 = a4
+RECEIVER: response byte 2 = 00
+Received response byte 1 = a4
+Received response byte 2 = 00
+PASS: Response = a4 00
+PASS: PWM = 0%
+
+========================================
+TEST 8: PWM = 50%
+Command: 04 32
+32 HEX = 50 DECIMAL
+Expected: A4 32
+========================================
+RECEIVER: response byte 1 = a4
+RECEIVER: response byte 2 = 32
+Received response byte 1 = a4
+Received response byte 2 = 32
+PASS: Response = a4 32
+PASS: PWM = 50%
+
+========================================
+TEST 9: PWM = 100%
+Command: 04 64
+Expected: A4 64
+========================================
+RECEIVER: response byte 1 = a4
+RECEIVER: response byte 2 = 64
+Received response byte 1 = a4
+Received response byte 2 = 64
+PASS: Response = a4 64
+PASS: PWM = 100%
+
+========================================
+TEST 10: INVALID PWM DUTY
+Command: 04 65
+65 HEX = 101 DECIMAL
+Expected: E2 65
+========================================
+RECEIVER: response byte 1 = e2
+RECEIVER: response byte 2 = 65
+Received response byte 1 = e2
+Received response byte 2 = 65
+PASS: Response = e2 65
+
+========================================
+TEST 11: INVALID COMMAND
+Command: 99
+Expected: E2 99
+========================================
+RECEIVER: response byte 1 = e2
+RECEIVER: response byte 2 = 99
+Received response byte 1 = e2
+Received response byte 2 = 99
+PASS: Response = e2 99
+
+========================================
+       UART COMMAND SYSTEM
+          FINAL SUMMARY
+========================================
+Total tests  : 11
+Passed       : 11
+Failed       : 0
+
+========================================
+        ALL TESTS PASSED
+        UART SYSTEM VERIFIED
+========================================
